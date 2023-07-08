@@ -36,8 +36,6 @@ const Header = () => {
             :
             <li><Link to='/login'>Login</Link></li>}
 
-
-
     </>
     return (
         <div className="navbar bg-base-100 h-20 mb-12">

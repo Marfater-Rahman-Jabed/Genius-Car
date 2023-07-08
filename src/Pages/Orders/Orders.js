@@ -12,15 +12,15 @@ const Orders = () => {
             }
         })
             .then(res => {
-                if (res.status === 401 || res.status === 403) {
-                    Logout()
-                }
+                // if (res.status === 401 || res.status === 403) {
+                //     Logout()
+                // }
 
                 return res.json()
             })
             .then(data => {
                 console.log('inside the data', data);
-                // setOrders(data)
+                setOrders(data)
             })
     }, [user?.email, Logout])
     const handleDelete = (id) => {
